@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Removido margem padrão */
+            padding: 0; /* Removido padding padrão */
+            min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da viewport */
+            position: relative; /* Adicionado para garantir que o footer fique no final da página */
+        }
+        
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #6e4e4e;
+        }
+        main{
+            margin-bottom: 15px;
+
+        }
+        .produto {
+            margin: 0.5%;
+            float: left;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            width: calc(50% - 1%); /* 50% da largura da tela, menos 1% de margem */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .produto img {
+            margin-bottom: 10px; /* Espaço entre o texto e a imagem */
+        }
+
+        footer {
+            width: 100%;
+            background-color: rgb(118, 184, 118);
+            margin-top: 25px;
+            padding: 05px;
+            display: flex;
+            justify-content: center;
+
+        }
+        
+        h1, h2, h3 {
+            background-color: rgb(43, 36, 36);
+            color: rgb(118, 184, 118);
+            padding: 10px;
+        }
+        #divContent{
+             overflow:auto; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NovaStore</h1>
+        <nav>
+            <ul>
+                <dIV>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Quemsomos.html">Quem Somos</a></li>
+                <li><a href="MeuPerfil.html">Meu Perfil</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
+            </dIV>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto">
+                <h3>30% de Desconto - R$ 4.178,86</h3>
+                <p>Pc Gamer Completo Amd Ryzen 3 16gb Gtx 1650 4gb Ssd 240GB</p>
+                <p><img src="C:\Users\Administrador\Downloads\ProjetoWeb\ProjetoWeb\IMAGENS\01.webp" width="180" height="180"></p> 
+            </div>
+            <div class="produto">
+                <h3>30% de Desconto - R$ 3500,86</h3>
+                <p>Pc Gamer Completo Amd Ryzen 5 16gb RTX 2070 8gb Ssd 240GB</p>
+                <p><img src="C:\Users\Administrador\Downloads\ProjetoWeb\ProjetoWeb\IMAGENS\02.webp" width="180" height="180"></p> 
+            </div>
+            <div class="produto">
+                <h3>15% de Desconto - R$ 7348,16</h3>
+                <p>Pc Gamer Completo Amd Ryzen 7 32gb RTX 2070 8gb Ssd 240GB</p>
+                <p><img src="C:\Users\Administrador\Downloads\ProjetoWeb\ProjetoWeb\IMAGENS\04.jfif" width="180" height="180"></p> 
+            </div>
+            <div class="produto">
+                <h3>40% de Desconto - R$ 8654,16</h3>
+                <p>Pc Gamer Completo Amd Ryzen 7 32gb RTX 2070 8gb Ssd 240GB + Kit Gamer</p>
+                <p><img src="C:\Users\Administrador\Downloads\ProjetoWeb\ProjetoWeb\IMAGENS\03.jfif" width="180" height="180"></p> 
+            </div>
+            <div class="produto">
+                <h3>40% de Desconto - R$ 8654,16</h3>
+                <p>Pc Gamer Completo Amd Ryzen 7 32gb RTX 2070 8gb Ssd 240GB + Kit Gamer</p>
+                <p><img src="C:\Users\Administrador\Downloads\ProjetoWeb\ProjetoWeb\IMAGENS\03.jfif" width="180" height="180"></p> 
+            </div>
+            <div class="produto">
+                <h3>40% de Desconto - R$ 8654,16</h3>
+                <p>Pc Gamer Completo Amd Ryzen 7 32gb RTX 2070 8gb Ssd 240GB + Kit Gamer</p>
+                <p><img src="C:\Users\Administrador\Downloads\ProjetoWeb\ProjetoWeb\IMAGENS\03.jfif" width="180" height="180"></p> 
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>© 2024 NovaStore - todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>
+
+<!-- <script>
+    // JavaScript para exibir o footer no final da página
+    window.addEventListener("scroll", function() {
+        var footer = document.getElementById("footer");
+        var scrollPosition = window.scrollY || window.pageYOffset;
+        var windowHeight = window.innerHeight;
+        var bodyHeight = document.body.offsetHeight;
+
+        if (scrollPosition + windowHeight >= bodyHeight) {
+            footer.style.display = "block"; // Exibe o footer
+        } else {
+            footer.style.display = "none"; // Oculta o footer
+        }
+    });
+</script> -->

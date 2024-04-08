@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(236, 233, 245);
+            background-color: #2e1919;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            background-color: #679c73;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .customer-details, .delivery-address {
+            background-color: #6b9676;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .customer-name {
+            color: rgb(201, 218, 201);
+        }
+        .total {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Carrinho de Compras</h2>
+    <div id="cart">
+        <!-- Itens do carrinho serão inseridos aqui -->
+    </div>
+    <div class="customer-details">
+        <h3 class="customer-name">Nome do Cliente: Rafael Jamil</h3>
+    </div>
+    <div class="delivery-address">
+        <h3>Endereço de Entrega</h3>
+        <p>Rua Monsenhor Kolly, 234, Atibaia, Sao Paulo, 12635-983</p>
+    </div>
+    <div id="total" class="total"></div>
+    <button onclick="checkout()">Finalizar Compra</button>
+
+    <script>
+        var cart = [
+            { name: "Produto 1", price: 4300 },
+            { name: "Produto 2", price: 200 },
+            { name: "Produto 3", price: 300 }
+        ];
+        var shipping = 75;
+
+        function displayCart() {
+            var cartDiv = document.getElementById("cart");
+            var total = 0;
+            cart.forEach(function(item) {
+                var itemDiv = document.createElement("div");
+                itemDiv.className = "cart-item";
+                itemDiv.innerText = item.name + " - " + "R$" + item.price;
+                cartDiv.appendChild(itemDiv);
+                total += item.price;
+            });
+            total += shipping;
+            document.getElementById("total").innerText = "Total (incluindo frete): R$" + total;
+        }
+
+        function checkout() {
+            alert("Compra finalizada! Obrigado pela sua compra.");
+        }
+
+        displayCart();
+    </script>
+</body>
+</html>
